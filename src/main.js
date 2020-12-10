@@ -12,13 +12,20 @@ export default class App {
         return fact
     }
 
-    /*convertirAString(numero){
+    convertirAString(numero){
 
         let i=1
+        let canti = ""
         
-        while()
+        while(i<=numero){
 
-    }*/
+            canti = canti + "*"
+
+            i++
+        }
+
+        return canti
+    }
 
     obtenerDivisibles(numero){
 
@@ -65,6 +72,7 @@ let app = new App();
 console.log(app.factorial(5))
 
 //Función asteriscos
+console.log(app.convertirAString(5))
 
 //Función divisible
 console.log(app.obtenerDivisibles(6))
