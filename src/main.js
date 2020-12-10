@@ -41,6 +41,21 @@ export default class App {
         return divi
     }
 
+    elevar(numero, potencia){
+
+        let i = 1
+        let po = 1
+
+        do{
+
+            po = po * numero
+
+            i++
+
+        }while(i<=potencia)
+
+        return po
+    }
 
 }
 
@@ -53,3 +68,6 @@ console.log(app.factorial(5))
 
 //Función divisible
 console.log(app.obtenerDivisibles(6))
+
+//Función elevar
+console.log(app.elevar(3,4))
